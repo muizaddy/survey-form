@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 0.5;
+  line-height: 1.2;
+  height: 210vh;
+}
+form{
+  background: url(./collaborate.jpg) no-repeat center center/cover;
+  background-blend-mode: overlay;
+  background-color: rgb(70, 74, 136);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container{
+  text-align: center;
+  max-width: 550px;
+  width: 90%;
+  height: 90%;
+  padding-bottom: 10%;
+}
+form .container .head{
+  text-align: center;
+  padding: 30px;
+}
+form .container .head p{
+  font-style: italic;
+  margin-top: 10px;
+}
+
+form .container .detail{
+  text-align: left;
+  background-color: rgba(39, 41, 72, 0.895);
+  height: 100%;
+  padding: 45px;
+  border-radius: 5px;
+}
+ 
+form .container .detail .form_info{
+  display: flex;
+  flex-direction: column;
+  height: 45px;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+}
+form .container .detail .form_info input,
+form .container .detail .form_info select{
+  padding: 5px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: #777;
+}
+form .container .detail .form_quest p{
+  padding: 10px 0px;
+}
+.space{
+  padding: 5px 0px;
+  display: block;
+
+}
+form .container .detail .form_quest span input{
+  margin-right: 5px;
+}
+form .container .detail .form_quest #comment{
+  padding: 5px;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  padding-bottom: 60px;
+}
+#submit{
+text-align: center;
+width: 100%;
+padding: 10px;
+margin: 20px 0px;
+background-color: green;
+color: #fff;
+border: none;
+font-family: 'Montserrat', sans-serif;
+cursor: pointer;
+}
+#submit:hover{
+  background-color: rgb(74, 134, 74);
+}
+
+@media screen and (max-width:294px){
+  body{
+    height: 250vh;
+  }
+  form .container .head{
+    font-size: 1.2rem;
+  }
+
+  form .container .detail{
+  font-size: 12px;
+}
+}
